@@ -2,8 +2,8 @@
 ## 
 
 ## below function creates a special "matrix", which returns a list containing a function to 
-## 1. set the value of the vector;
-## 2. get the value of the vector;
+## 1. set the value of the matrix;
+## 2. get the value of the matrix;
 ## 3. set the value of the inverse;
 ## 4. get the value of the inverse;
 
@@ -23,7 +23,6 @@ makeCacheMatrix <- function(x = matrix()) {
          setsolve = setsolve,
          getsolve = getsolve)
   
- 
 }
 
 
@@ -44,5 +43,4 @@ cacheSolve <- function(x, ...) {
   a <-solve(data,...)
   x$setsolve(a)
   a
-  
 }
